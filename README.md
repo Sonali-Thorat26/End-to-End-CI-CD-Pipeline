@@ -26,4 +26,4 @@ Fetches source code from GitHub repository
 2️⃣ Build Stage
 Builds Docker image using Dockerfile
 3️⃣ Run Stage
-Runs container with port mapping:
+Runs container with port mapping:3000:3000
