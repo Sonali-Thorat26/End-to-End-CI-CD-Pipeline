@@ -1,13 +1,11 @@
-FROM node:18
+FROM node:latest
 
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
+WORKDIR  /pipeline
 
 COPY . .
 
-EXPOSE 3000
+RUN  npm install
 
-CMD ["npm", "start"]
+EXPOSE  3000
+
+CMD [ "npm","start" ]
